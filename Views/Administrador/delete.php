@@ -1,7 +1,7 @@
 <?php 
-require_once('../../Models/Medico.php');
+require_once('../../Models/Administrador.php');
 
-$modeloMedico=new medico();
+$modeloAdministrador=new administrador();
 
 $id=$_GET['id'];
 ?>
@@ -15,8 +15,8 @@ $id=$_GET['id'];
 </head>
 <body>
     <b><p>Esta seguro que desea eliminar este registro?</p></b>
-    <form method="POST" action="../../Controllers/Medico/delete.php">
-        <input type="hidden" name="idMedico" value="<?php echo $id; ?>">
+    <form method="POST" action="../../Controllers/Administrador/delete.php">
+        <input type="hidden" name="idAdministrador" value="<?php echo $id; ?>">
         <input id="boton" type="submit" Value="Eliminar">
     </form>
 </body>
